@@ -22,3 +22,7 @@ private final String GAME_URL = "http://www.example.com";
   * [Check out Google's guide on how to run apps on a real device](http://developer.android.com/training/basics/firstapp/running-app.html#RealDevice)
 * Running on an `Emulator`
   * [Check out Google's guide on how to run apps on an emulator](http://developer.android.com/training/basics/firstapp/running-app.html#Emulator)
+
+
+#####Step Four: Lift Off
+A big part of every app/game is the launch icon. This is the first representation your app gets and can make or break the chance that a user will install your app/game. To change the launch icon there are four images you need to change located in the [drawable](https://github.com/matthewcmckenna/html5-game-android-template/tree/master/app/src/main/res) folders. The suffix of the drawable folders (mdpi,hdpi,xhdpi,xxhdpi) represents different screen resolutions/densities (listed in increasing order). To change your launch icon you must replace the `ic_launcher.png` in each of these folders retaining their respective size. Transparency and negative space are allowed.
