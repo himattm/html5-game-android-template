@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="html5-game-android-template : A simple template to package HTML5 Games within an android app">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>html5-game-android-template</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/matthewcmckenna/html5-game-android-template">View on GitHub</a>
+
+          <h1 id="project_title">html5-game-android-template</h1>
+          <h2 id="project_tagline">A simple template to package HTML5 Games within an android app</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/matthewcmckenna/html5-game-android-template/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/matthewcmckenna/html5-game-android-template/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="html-5-game-android-template" class="anchor" href="#html-5-game-android-template" aria-hidden="true"><span class="octicon octicon-link"></span></a>html-5-game-android-template</h1>
+
+<p>A simple template to package HTML5 Games within an android app</p>
+
+<h5>
+<a id="step-one-importing-into-android-studio" class="anchor" href="#step-one-importing-into-android-studio" aria-hidden="true"><span class="octicon octicon-link"></span></a>Step One: Importing into Android Studio</h5>
+
+<p>After downloading <a href="https://developer.android.com/sdk/installing/studio.html">Android Studio</a> and cloning or downloading this repo you will need to import the project to start editing.</p>
+
+<ol>
+<li>In Android Studio, close any projects currently open. You should see the Welcome to Android Studio window.
+Click Import Project.</li>
+<li>Locate where you downloaded the repo and select the build.gradle file and click OK.</li>
+<li>In the following dialog, leave Use gradle wrapper selected and click OK. (You do not need to specify the Gradle home.)</li>
+</ol>
+
+<p><a href="https://developer.android.com/sdk/installing/migrate.html#Export">Importing Source from Google</a></p>
+
+<h5>
+<a id="step-two-adding-your-url" class="anchor" href="#step-two-adding-your-url" aria-hidden="true"><span class="octicon octicon-link"></span></a>Step Two: Adding your URL</h5>
+
+<p>To begin making changes to support your game first look to <a href="https://github.com/matthewcmckenna/html5-game-android-template/blob/master/app/src/main/java/example/com/html5gametemplate/GameActivity.java">GameActivity.java</a> and change these variables: </p>
+
+<pre><code>private final boolean FULL_SCREEN = true;
+private final String GAME_URL = "http://www.example.com"; 
+</code></pre>
+
+<h5>
+<a id="step-three-renaming-things" class="anchor" href="#step-three-renaming-things" aria-hidden="true"><span class="octicon octicon-link"></span></a>Step Three: Renaming Things</h5>
+
+<ul>
+<li>Next look in <a href="https://github.com/matthewcmckenna/html5-game-android-template/blob/master/app/src/main/res/values/strings.xml">strings.xml</a> and make changes to<code>&lt;string name="app_name"&gt;HTML5 Game Template&lt;/string&gt;</code> if you have chosen to not be full screen.</li>
+<li>
+<strong><em>IF YOU PLAN ON PUBLISHING TO THE STORE YOU MUST HAVE A UNIQUE PACKAGE NAME</em></strong>
+
+<ul>
+<li>The apps in Google Play are recognized by their package name (i.e. <code>com.example.mygame</code>) therefore each needs to be unique. The convention of using the reverse of a domain name that the publisher owns ensures that each will be unique. To publish using this template you will have to refactor the package name to make it unique by either adding to it or altering it to be your own entirely.</li>
+<li> <a href="http://stackoverflow.com/questions/16804093/android-studio-rename-package">Here is a stackoverflow resource on renaming the package</a>
+</li>
+</ul>
+</li>
+</ul>
+
+<h5>
+<a id="step-four-running-your-app" class="anchor" href="#step-four-running-your-app" aria-hidden="true"><span class="octicon octicon-link"></span></a>Step Four: Running your app</h5>
+
+<ul>
+<li>Running on a <code>Real Device</code>
+
+<ul>
+<li><a href="http://developer.android.com/training/basics/firstapp/running-app.html#RealDevice">Check out Google's guide on how to run apps on a real device</a></li>
+</ul>
+</li>
+<li>Running on an <code>Emulator</code>
+
+<ul>
+<li><a href="http://developer.android.com/training/basics/firstapp/running-app.html#Emulator">Check out Google's guide on how to run apps on an emulator</a></li>
+</ul>
+</li>
+</ul>
+
+<h5>
+<a id="step-five-lift-off" class="anchor" href="#step-five-lift-off" aria-hidden="true"><span class="octicon octicon-link"></span></a>Step Five: Lift Off</h5>
+
+<p>A big part of every app/game is the launch icon. This is the first representation your app gets and can make or break the chance that a user will install your app/game. To change the launch icon there are four images you need to change located in the <a href="https://github.com/matthewcmckenna/html5-game-android-template/tree/master/app/src/main/res">drawable</a> folders. The suffix of the drawable folders (mdpi,hdpi,xhdpi,xxhdpi) represents different screen resolutions/densities (listed in increasing order). To change your launch icon you must replace the <code>ic_launcher.png</code> in each of these folders retaining their respective size. Transparency and negative space are allowed.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">html5-game-android-template maintained by <a href="https://github.com/matthewcmckenna">matthewcmckenna</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
